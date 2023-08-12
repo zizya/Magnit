@@ -1,0 +1,1642 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.container {
+    width: 1460px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.container.narrow {
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.header {
+    background: #232F42;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 152px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-menu .address {
+    text-align: end;
+}
+
+/*del?*/
+
+
+.hero {
+    width: 100%;
+}
+
+.hero .container {
+    height: 560px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.heroVideo {
+    width: 100%;
+    max-height: 560px;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.heroTitle {
+    width: 689px;
+    height: 344px;
+    padding-left: 50px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: rgba(0, 0, 0, .75);
+    mix-blend-mode: normal;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+.heroTitle .h1 {
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.heroTitle .text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+
+.hero-form {
+    width: 572px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, .75);
+    color: #FFF;
+    border-radius: 8px;
+}
+
+.site-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.heroForm-form {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+
+}
+
+.heroForm-form label + label {
+    margin-top: 11px;
+}
+
+.heroForm-form input {
+    /*height: 61px;*/
+
+    border-radius: 8px;
+    background: #F5F5F5;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+    padding: 22px 12px;
+    border: 1px solid transparent;
+
+
+}
+
+
+.heroForm-form input::placeholder,
+textarea::placeholder {
+    color: #B7B7B7;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.heroForm-form .heroForm-submit {
+    background-color: #FFA800;
+    background-image: url(/project1/src/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 80px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.heroForm-form .heroForm-submit:hover {
+    opacity: .8;
+}
+
+.about {
+    margin-top: 75px;
+}
+
+.about .container .site-title {
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.site-title-description {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    text-align: center;
+}
+
+
+.services .container .site-title {
+    margin-top: 75px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+.categories-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    margin-top: 35px;
+    /*width: 1400px;*/
+
+}
+
+.categories-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 18px * 3 / 4);
+    height: 300px;
+    border-radius: 15px;
+    background: #232F42;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.categories-card:nth-child(n + 5) {
+    margin-top: 18px;
+}
+
+.services-card-img {
+    width: 100%;
+}
+
+
+.categories-card .categories-card-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+
+
+}
+
+
+.categories-card-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.categories-card .services-card-spark {
+    position: absolute;
+    top: 0;
+    --spark-height: 53px;
+    margin-top: calc(var(--spark-height) / -2);
+
+}
+
+.recall-section {
+    background: linear-gradient(180deg, #FFA800 0%, #ED772D 100%);
+}
+
+.recall-section .container {
+    height: 152px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.recall-text {
+    font-size: 28px;
+    font-weight: 700;
+    width: 862px;
+}
+
+.recall-text .text-block-small {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.recall .recallTitle :last-child {
+    font-size: 20px;
+    font-weight: 400;
+    width: 652px;
+}
+
+
+.recall-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232F42;
+    width: 445px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+
+}
+
+
+.materials {
+    margin-top: 75px;
+
+}
+
+.materials .container .site-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.materials-wrapper {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.materials-item {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proposal {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.proposal .container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.proposal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+}
+
+.proposal-item + .proposal-item {
+    margin-top: 20px;
+
+}
+
+.proposal-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.proposal-text {
+    width: 863px;
+    padding-left: 20px;
+}
+
+.proposal-item .proposal-text-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+
+}
+
+.proposal-text .proposal-text-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+
+}
+
+.proposal-text ul {
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    list-style: disc;
+}
+
+.price {
+    width: 100%;
+    color: black;
+}
+
+.blue {
+    background: #232F42;
+    color: white;
+    height: 775px;
+}
+
+.price .container {
+    text-align: center;
+    padding-top: 75px;
+
+    width: 1138px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price .container .site-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.price .container .site-title-description {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+
+}
+
+.price.blue .price-table {
+    width: 70%;
+}
+
+.price-table-table {
+    margin-top: 10px;
+    width: 100%;
+    background: #F5F5F5;
+    color: #232F42;
+    table-layout: fixed;
+    overflow: hidden;
+
+}
+
+
+.price.blue .price-table-table {
+    margin-top: 22px;
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.price.blue th,
+.price.blue td {
+    border: 2px solid #232F42;
+}
+
+.price.white .price-table-table {
+    border-radius: 16px 16px 0 0;
+}
+
+.price.white th + th {
+    border-left: 2px solid #232F42;
+}
+
+.price.white td {
+    border: 2px solid #232F42;
+}
+
+.price-table-table th {
+    padding: 15px;
+    background: #D9D9D9;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.price-table-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+
+}
+
+.price-table-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-table-btns > * {
+    width: calc(50% - 31px / 2);
+}
+
+.price-table-btn-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    background-color: #A5AAAC;
+}
+
+.price-table-btn-download:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.price-table-btns .recall-btn {
+    background-color: #FFA800;
+}
+
+
+.price-table-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+
+}
+
+
+.costSlice .costBtn form {
+    width: 1322px;
+    margin-top: 0;
+}
+
+.price-table-btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    border: none;
+    background-color: #FFA800;
+    color: white;
+
+}
+
+
+.benefits .container {
+    color: white;
+
+}
+
+.benefits {
+    padding-top: 75px;
+    padding-bottom: 105px;
+    background: #232F42;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.benefits-wrapper {
+    margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefits-card {
+    width: calc(50% - 38px / 2);
+    height: 160px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background: #1b1a37;
+    color: white;
+}
+
+.benefits-card:nth-child(n + 3) {
+    margin-top: 25px;
+}
+
+.benefits-card .benefits-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #FFA800;
+
+}
+
+.benefits-card-text .benefits-card-text-text {
+    margin-top: 10px;
+    width: 467px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    color: white;
+
+}
+
+.benefits-card-text {
+    padding-left: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 98px;
+
+}
+
+.about-us .container .site-title {
+    margin-top: 75px;
+}
+
+.about-us-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-us-wrapper .about-us-card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about-us-wrapper .about-us-card .about-us-card-icon {
+    width: 154px;
+}
+
+.about-us-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #FFA800;
+
+}
+
+.about-us-card-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.partners .container .site-title {
+    margin-top: 75px;
+}
+
+.partners-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.callback-form {
+    background-image: url(./src/icons/background.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 75px;
+}
+
+.callback-form .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 822px;
+
+
+}
+
+.callback-form .container .callback-form-left {
+    color: white;
+    width: 566px;
+    text-align: start;
+    margin-right: 65px;
+}
+
+.callback-form .container .callback-form-left .site-title-description,
+.callback-form .container .callback-form-left .site-title {
+    text-align: start;
+}
+
+.callback-form-form {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    padding: 30px;
+    background: #232f4255;
+    color: #FFF;
+    border-radius: 8px;
+
+}
+
+
+.callback-form-form .callback-form-name,
+.callback-form-tel,
+.callback-form-submit,
+.callback-form-email,
+.callback-form-comment {
+    height: 61px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+    padding-left: 12px;
+    margin-top: 15px;
+
+
+}
+
+.callback-form-form input::placeholder,
+textarea::placeholder {
+    color: #B7B7B7;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.callback-form-form .callback-form-submit {
+    background-color: #FFA800;
+    background-image: url(/project1/src/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 45px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.callback-form-form .callback-form-submit:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: none;
+}
+
+.callback-form-form .callback-form-comment {
+    height: 205px;
+    text-align: start;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #232F42;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1400px;
+    height: 385px;
+
+}
+
+.footer-nav-menu {
+    flex-direction: column;
+}
+
+.footer-nav-menu .footer-address {
+    margin-top: 10px;
+    text-align: start;
+
+}
+
+.footer-title {
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.footer-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.footer-social img {
+    height: 30px;
+}
+
+.footer-social-item img:hover {
+    transform: scale(1.1);
+}
+
+.footer-right-menu {
+
+
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer-right-menu li {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    list-style-type: disc;
+
+}
+
+.footer .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #B7B7B7;
+
+
+}
+
+@media only screen and (max-width: 1599px) {
+    /*1400*/
+    .container {
+        max-width: 1320px;
+    }
+
+    .header .container, .hero .container {
+        justify-content: space-between;
+    }
+
+    .proposal-item {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    /*1200*/
+    .container {
+        max-width: 1140px;
+    }
+
+    .heroTitle {
+        width: 48%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .heroTitle .h1 {
+        font-size: 35px;
+    }
+
+    .hero-form {
+        width: 48%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .categories-card {
+        height: 250px;
+    }
+
+    .materials-item-icon {
+        width: 80%;
+    }
+
+    .proposal-text .proposal-text-text {
+        margin-top: 10px;
+
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.05;
+    }
+
+    .proposal-item + .proposal-item .proposal-text .proposal-text-text {
+        margin-right: 10px;
+    }
+
+    .proposal-text ul {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.05;
+    }
+
+    .benefits-card-text .benefits-card-text-text {
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1199px) {
+    /*992*/
+    .container {
+        max-width: 960px;
+    }
+
+    .partners-wrapper-img {
+        width: 18%;
+    }
+
+    .hero .container, .heroVideo {
+        height: 370px;
+    }
+
+    .heroTitle {
+        height: 270px;
+    }
+
+    .heroTitle .h1,
+    .about .container .site-title,
+    .services .container .site-title,
+    .materials .container .site-title,
+    .price .container .site-title,
+    .site-title {
+        font-size: 30px;
+    }
+
+    .heroTitle .text,
+    .site-title-description,
+    .categories-card .categories-card-title,
+    .recall-btn,
+    .materials-item,
+    .proposal-item .proposal-text-title,
+    .price .container .site-title-description,
+    .price-table-table th,
+    .benefits-card .benefits-card-title,
+    .about-us-card-title {
+        font-size: 18px;
+    }
+
+    .footer-title,
+    .footer-right-menu {
+        font-size: 22px;
+    }
+
+    .proposal-text .proposal-text-text,
+    .proposal-text ul,
+    .price-table-table td,
+    .benefits-card-text .benefits-card-text-text,
+    .text-block-small,
+    .about-us-card-text,
+    .nav-menu,
+    .footer-right-menu li {
+
+        font-size: 14px;
+    }
+
+    .hero-form {
+        height: 270px;
+    }
+
+
+    .heroForm-form {
+        width: 100%;
+    }
+
+    .heroForm-form input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .heroForm-form .heroForm-submit {
+        background-position: 45px;
+    }
+
+    .about,
+    .materials,
+    .about-us .container .site-title,
+    .partners .container .site-title,
+    .services .container .site-title {
+
+        margin-top: 50px;
+    }
+
+    .price .container, .benefits {
+        padding-top: 50px;
+    }
+
+    .categories-card {
+        height: 200px;
+    }
+
+    .categories-card .services-card-spark {
+        transform: translateX(-75px);
+    }
+
+    .recall-text {
+
+        font-size: 24px;
+    }
+
+    .recall-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .proposal-img {
+        width: 50%;
+    }
+
+    .blue {
+        height: 700px;
+    }
+
+    .benefits {
+        padding-bottom: 60px;
+    }
+
+    .callback-form-form .callback-form-name,
+    .callback-form-tel,
+    .callback-form-submit,
+    .callback-form-email,
+    .callback-form-comment {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+    }
+
+    .callback-form-form .callback-form-submit {
+        background-position: 20px;
+
+    }
+
+    .callback-form .container {
+        height: 700px;
+    }
+
+    .footer-social img {
+        height: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    /*768*/
+    .container {
+        max-width: 720px;
+    }
+
+    .heroTitle .h1,
+    .about .container .site-title,
+    .services .container .site-title,
+    .materials .container .site-title,
+    .price .container .site-title,
+    .site-title {
+        font-size: 24px;
+    }
+
+    .heroTitle .text,
+    .site-title-description,
+    .categories-card .categories-card-title,
+    .materials-item,
+    .price .container .site-title-description,
+    .price-table-table th,
+    .nav-menu,
+    .about-us-card-title,
+    .recall-btn,
+    .benefits-card-text .benefits-card-text-text {
+        font-size: 12px;
+    }
+
+
+    .footer-title,
+    .footer-right-menu,
+    .heroForm-form .heroForm-submit,
+    .proposal-item .proposal-text-title,
+    .price-table-btn-download,
+    .benefits-card .benefits-card-title {
+        font-size: 16px;
+    }
+
+    .price-table-table td,
+    .recall-text .text-block-small,
+    .about-us-card-text,
+    .footer-right-menu li,
+    .proposal-text .proposal-text-text,
+    .proposal-text ul {
+
+        font-size: 10px;
+    }
+
+    .heroTitle, .hero-form {
+        height: 225px;
+    }
+
+    .heroTitle-spark {
+        width: 100%;
+    }
+
+    .heroForm-form input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .heroForm-form .heroForm-submit {
+        background-position: 20px;
+        background-size: 30px;
+    }
+
+    .site-title-description {
+        margin-top: 15px;
+    }
+
+    .materials-wrapper, .proposal .container {
+        margin-top: 50px;
+    }
+
+    .categories-card {
+        height: 150px;
+    }
+
+    .recall-text,
+    .callback-form-form .callback-form-submit {
+        font-size: 16px;
+    }
+
+    .recall-btn-icon {
+        width: 30px;
+    }
+
+    .recall-section .container {
+        height: 100px;
+    }
+
+    .categories-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .proposal-img {
+        width: 50%;
+    }
+
+    .container.narrow {
+        padding: 0;
+    }
+
+    .blue {
+        height: 600px;
+    }
+
+    .benefits-card-icon {
+        width: 30%;
+    }
+
+    .benefits-card {
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .callback-form-form {
+        width: 100%;
+    }
+
+    .footer .logo {
+        height: 140px;
+    }
+
+    .footer .logo .logo-img {
+        width: 60%;
+    }
+
+    .logo-link {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    /*576*/
+    .container {
+        max-width: 540px;
+    }
+
+    .logo-img {
+        width: 70%;
+    }
+
+    .header .container {
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .heroTitle, .hero-form {
+        height: 170px;
+    }
+
+    .heroForm-form input {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .heroTitle .h1,
+    .about .container .site-title,
+    .services .container .site-title,
+    .materials .container .site-title,
+    .categories-card .categories-card-title,
+    .price .container .site-title,
+    .site-title {
+        font-size: 18px;
+    }
+
+    .price-table-table td,
+    .heroTitle .text,
+    .site-title-description,
+    .materials-item,
+    .price .container .site-title-description,
+    .price-table-table th,
+    .nav-menu,
+    .about-us-card-title,
+    .benefits-card-text .benefits-card-text-text {
+        font-size: 10px;
+    }
+
+    .recall-btn,
+    .heroForm-form .heroForm-submit,
+    .heroForm-form input,
+    .proposal-item .proposal-text-title,
+    .benefits-card .benefits-card-title {
+        font-size: 12px;
+    }
+
+    .footer-title,
+    .footer-right-menu,
+    .price-table-btn-download {
+        font-size: 14px;
+    }
+
+
+    .recall-text .text-block-small,
+    .about-us-card-text,
+    .footer-right-menu li,
+    .proposal-text .proposal-text-text,
+    .proposal-text ul {
+
+        font-size: 10px;
+    }
+
+    .heroForm-form .heroForm-submit {
+        background-position: 15px;
+        background-size: 25px;
+    }
+
+    .hero .container, .heroVideo {
+        height: 220px;
+    }
+
+    .about,
+    .materials,
+    .about-us .container .site-title,
+    .partners .container .site-title,
+    .services .container .site-title,
+    .materials-wrapper,
+    .proposal .container {
+        margin-top: 25px;
+    }
+
+    .categories-wrapper {
+        margin-top: 0;
+    }
+
+    .categories-card {
+        height: 200px;
+        width: calc(50% - 18px * 3 / 4);
+        margin-top: 18px;
+    }
+
+    .recall-btn-icon {
+        width: 20px;
+    }
+
+    .proposal {
+        margin-bottom: 25px;
+    }
+
+    .price .container, .benefits {
+        padding-top: 25px;
+    }
+
+    .about-us-wrapper .about-us-card {
+        width: 30%;
+    }
+
+    .about-us-wrapper .about-us-card .about-us-card-icon {
+        width: 50%;
+    }
+
+    .callback-form-form .callback-form-name,
+    .callback-form-tel,
+    .callback-form-submit,
+    .callback-form-email,
+    .callback-form-comment {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .callback-form-form .callback-form-comment {
+        height: 70px;
+    }
+
+    .callback-form-form {
+        padding: 15px;
+    }
+
+    .callback-form .container {
+        height: 390px;
+    }
+
+    .callback-form-form .callback-form-submit {
+        background-image: none;
+    }
+
+    .footer .logo {
+        height: 80px;
+    }
+
+    .footer-social img {
+        height: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    /*большой 425 телефон*/
+    .container {
+        max-width: 100%;
+    }
+
+    .header .container {
+        flex-direction: column;
+
+    }
+
+    .logo-img {
+        width: 100%;
+
+    }
+
+    .nav-menu .address {
+        text-align: center;
+    }
+
+    .hero .container {
+        flex-direction: column;
+
+    }
+
+    .hero .container, .heroVideo {
+        height: 500px;
+    }
+
+    .hero .container {
+        justify-content: space-evenly;
+    }
+
+    .heroTitle, .hero-form {
+        height: 45%;
+        width: 100%;
+    }
+
+    .categories-card .categories-card-title,
+    .heroForm-form .heroForm-submit, .heroForm-form input {
+        font-size: 18px;
+    }
+
+    .heroTitle .h1,
+    .about .container .site-title,
+    .services .container .site-title,
+    .materials .container .site-title,
+    .price .container .site-title,
+    .site-title {
+        font-size: 24px;
+    }
+
+    .proposal-text .proposal-text-text,
+    .price-table-btn-download,
+    .proposal-text ul,
+    .recall-text .text-block-small {
+        font-size: 12px;
+    }
+
+    .price-table-table td,
+    .heroTitle .text,
+    .site-title-description,
+    .materials-item,
+    .price .container .site-title-description,
+    .price-table-table th, .nav-menu,
+    .about-us-card-title,
+    .benefits-card-text .benefits-card-text-text {
+        font-size: 14px
+    }
+
+    .categories-card {
+        height: 100%;
+    }
+
+    .categories-card-img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .recall-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+    }
+
+    .recall-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .recall-btn {
+        width: 200px;
+        padding-left: 20px;
+        margin-top: 20px;
+        justify-content: normal;
+    }
+
+    .recall-btn-icon {
+        margin-right: 20px;
+    }
+    .price-table-btn-add .recall-btn-icon{
+        margin-right: 0;
+    }
+    .materials-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .materials-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 30%;
+    }
+
+    .materials-item-icon {
+        width: 50%;
+    }
+
+    .proposal-item {
+        flex-direction: column;
+
+    }
+
+    .proposal-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .proposal-text {
+        padding-top: 20px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .proposal-img {
+        width: 80%;
+    }
+
+    .blue {
+        height: 100%;
+        padding-bottom: 25px;
+    }
+
+    .price-table-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-table-btn-download {
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        justify-content: normal;
+    }
+
+    .benefits-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+
+    }
+
+    .benefits-card {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .benefits-card-text-text {
+        padding-right: 10px;
+    }
+
+    .partners-wrapper-img {
+        width: 40%;
+    }
+
+    .partners-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .callback-form .container {
+        flex-direction: column;
+        height: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .callback-form .container .callback-form-left {
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .callback-form-form {
+        margin-top: 25px;
+    }
+
+    .callback-form-form .callback-form-submit {
+        background-image: url(/project1/src/icons/arrow.png);
+        background-position: 20px;
+        background-size: 30px;
+    }
+
+    .footer .logo {
+        order: 3;
+        margin-top: 25px;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+        align-items: normal;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .heroTitle, .hero-form {
+        height: 40%;
+    }
+
+    .categories-card .categories-card-title,
+    .heroForm-form .heroForm-submit, .heroForm-form input {
+        font-size: 14px;
+    }
+
+    .heroTitle .h1,
+    .about .container .site-title,
+    .services .container .site-title,
+    .materials .container .site-title,
+    .price .container .site-title,
+    .site-title {
+        font-size: 20px;
+    }
+
+    .proposal-text .proposal-text-text,
+    .price-table-btn-download,
+    .proposal-text ul,
+    .recall-text .text-block-small {
+        font-size: 12px;
+    }
+
+    .price-table-table td,
+    .heroTitle .text,
+    .site-title-description,
+    .materials-item,
+    .price .container .site-title-description,
+    .price-table-table th, .nav-menu,
+    .about-us-card-title,
+    .benefits-card-text .benefits-card-text-text {
+        font-size: 12px
+    }
+
+    .site-title-description {
+        text-align: left;
+    }
+
+    .categories-card-img {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .price-table-table th {
+        padding: 5px;
+
+    }
+
+    .price-table-table td {
+        padding: 10px;
+    }
+
+    .about-us-wrapper {
+        margin-top: 0;
+        flex-wrap: wrap;
+
+
+    }
+    .about-us-wrapper .about-us-card{
+        width: 75%;
+    }
+    .callback-form{
+        margin-top: 20px;
+    }
+    .footer-right-menu{
+        margin-top: 20px;
+    }
+    .footer-social img {
+    height: 25px;
+
+    }
+    .footer-nav-menu {
+        width: 80%;
+        align-items: center;
+    }
+    }
+
+
+
